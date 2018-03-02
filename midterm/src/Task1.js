@@ -10,6 +10,7 @@ class Task1 extends Component {
     isToggleOnFirst: false,
     isToggleOnSecond: false,
     isToggleOnThird: false,
+     isToggleOn:false,
      items:["Home", "About", "Contact"]
   };
 
@@ -21,19 +22,19 @@ class Task1 extends Component {
 
   handleHome() {
     this.setState(function(prevState) {
-      return {isToggleOnFirst: !prevState.isToggleOn};
+      return {isToggleOn: !prevState.isToggleOn};
     });
   }
 
   handleAbout() {
     this.setState(function(prevState) {
-      return {isToggleOnSecond: !prevState.isToggleOn};
+      return {isToggleOn: !prevState.isToggleOn};
     });
   }
 
   handleContact() {
     this.setState(function(prevState) {
-      return {isToggleOnThird: !prevState.isToggleOn};
+      return {isToggleOn: !prevState.isToggleOn};
     });
   }
   render() {
@@ -41,7 +42,6 @@ class Task1 extends Component {
       <div className="App">
     <ul className="header">
           <div className="flex">
-          {this.state.isToggleOn ? 'Login' : 'Logout'}
             <li onClick = {this.handleHome.bind(this)}><h1> {this.state.items[0]}</h1></li>
               {this.state.isToggleOnFirst && (
                 <li className="first"/>
