@@ -39,11 +39,11 @@ ul.header li {
   
   font-weight: bold;
   text-decoration: none;
-  background-color: black;
+
   display: inline-block;
   width: 150px; 
   height: 80px;
-  color: white;
+  color: black;
   margin-left:80px; 
   cursor: pointer;
 
@@ -76,3 +76,45 @@ justify-content: center;
   margin-left:80px; 
   cursor: pointer;
 }
+
+
+.second {
+
+  font-weight: bold;
+  text-decoration: none;
+  background-color: blue;
+  display: inline-block;
+  width: 150px; 
+  height: 80px;
+  color: white;
+  margin-left:-80px; 
+  cursor: pointer;
+}
+
+
+.third {
+
+  font-weight: bold;
+  text-decoration: none;
+  background-color: blue;
+  display: inline-block;
+  width: 150px; 
+  height: 80px;
+  color: white;
+  margin-left:80px; 
+  cursor: pointer;
+}
+li :hover {
+  background: blue;
+  color:white;
+}
+
+.first li:active {
+  background: blue;
+  color:white;
+}
+
+.ul.header li:active {
+  color: red;
+}
+
